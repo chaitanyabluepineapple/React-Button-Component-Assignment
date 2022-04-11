@@ -1,0 +1,132 @@
+.btn {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    margin: 0 0.4rem;
+  }
+
+  p {
+    padding-bottom: 0px;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:disabled {
+    background: #e0e0e0;
+    color: #9e9e9e;
+    pointer-events: none;
+  }
+}
+
+//Box shadow
+.box-shadow {
+  box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
+}
+
+//Variants
+.default {
+  border: none;
+  border-radius: 6px;
+  color: #3f3f3f;
+}
+
+.outline {
+  background-color: transparent;
+  border: 1px solid #3d5afe;
+  border-radius: 6px;
+  color: #3d5afe;
+
+  &:hover,
+  :focus {
+    background: rgba(41, 98, 255, 0.1);
+  }
+
+  &:disabled {
+    border: none;
+  }
+}
+
+.text {
+  color: #3d5afe;
+  background-color: transparent;
+  border: none;
+  border-radius: 6px;
+
+  &:hover,
+  :focus {
+    background: rgba(41, 98, 255, 0.1);
+  }
+
+  &:disabled {
+    background-color: transparent;
+  }
+}
+
+//Sizes
+.sm {
+  min-width: 130px;
+  min-height: 40px;
+}
+
+.md {
+  min-width: 150px;
+  min-height: 50px;
+  font-size: 1rem;
+}
+
+.lg {
+  min-width: 200px;
+  min-height: 60px;
+  font-size: 1.4rem;
+}
+
+//Colors
+.Default {
+  background-color: #e0e0e0;
+  &:hover,
+  :focus {
+    background-color: #aeaeae;
+  }
+}
+
+.Primary {
+  background-color: #2962ff;
+  color: white;
+  &:hover,
+  :focus {
+    background-color: #0039cb;
+  }
+}
+
+.Secundary {
+  background-color: #455a64;
+  color: white;
+  &:hover,
+  :focus {
+    background-color: #1c313a;
+  }
+}
+
+.Danger {
+  background-color: #d32f2f;
+  color: white;
+  &:hover,
+  :focus {
+    background-color: #9a0007;
+  }
+}
+
+.disableShadow {
+  background: #3d5afe;
+  border: none;
+  border-radius: 6px;
+  color: white;
+}

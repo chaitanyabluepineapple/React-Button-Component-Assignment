@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap");
+.btn {
+  font-family: "Noto Sans JP", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn span {
+  margin: 0 0.4rem;
+}
+.btn p {
+  padding-bottom: 0px;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.btn:disabled {
+  background: #e0e0e0;
+  color: #9e9e9e;
+  pointer-events: none;
+}
+
+.box-shadow {
+  box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
+}
+
+.default {
+  border: none;
+  border-radius: 6px;
+  color: #3f3f3f;
+}
+
+.outline {
+  background-color: transparent;
+  border: 1px solid #3d5afe;
+  border-radius: 6px;
+  color: #3d5afe;
+}
+.outline:hover,
+.outline :focus {
+  background: rgba(41, 98, 255, 0.1);
+}
+.outline:disabled {
+  border: none;
+}
+
+.text {
+  color: #3d5afe;
+  background-color: transparent;
+  border: none;
+  border-radius: 6px;
+}
+.text:hover,
+.text :focus {
+  background: rgba(41, 98, 255, 0.1);
+}
+.text:disabled {
+  background-color: transparent;
+}
+
+.sm {
+  min-width: 130px;
+  min-height: 40px;
+}
+
+.md {
+  min-width: 150px;
+  min-height: 50px;
+  font-size: 1rem;
+}
+
+.lg {
+  min-width: 200px;
+  min-height: 60px;
+  font-size: 1.4rem;
+}
+
+.Default {
+  background-color: #e0e0e0;
+}
+.Default:hover,
+.Default :focus {
+  background-color: #aeaeae;
+}
+
+.Primary {
+  background-color: #2962ff;
+  color: white;
+}
+.Primary:hover,
+.Primary :focus {
+  background-color: #0039cb;
+}
+
+.Secundary {
+  background-color: #455a64;
+  color: white;
+}
+.Secundary:hover,
+.Secundary :focus {
+  background-color: #1c313a;
+}
+
+.Danger {
+  background-color: #d32f2f;
+  color: white;
+}
+.Danger:hover,
+.Danger :focus {
+  background-color: #9a0007;
+}
+
+.disableShadow {
+  background: #3d5afe;
+  border: none;
+  border-radius: 6px;
+  color: white;
+}
+
+.color-selector-container {
+  display: flex;
+  padding: 1rem 0 1rem 0;
+}
+
+.color-selector {
+  padding: 0.9rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.default-color {
+  background-color: #e0e0e0;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.primary-color {
+  background-color: #2962ff;
+  color: white;
+}
+
+.secundary-color {
+  background-color: #455a64;
+  color: white;
+}
+
+.danger-color {
+  background-color: #d32f2f;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .color-selector-container {
+    margin-bottom: 2rem;
+  }
+}
+.icon-picker-container {
+  display: flex;
+  padding: 0 1rem 1rem 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.icon-picker-container span {
+  border: 1px solid #bdbdbd;
+  padding: 0.3rem;
+  background-color: #f3f3f3;
+  margin: 0.5rem;
+  color: #3f3f3f;
+  border-radius: 15%;
+  cursor: pointer;
+}
+.icon-picker-container span:hover {
+  background-color: #d1d1d1;
+}
+.icon-picker-container p {
+  width: 5.8rem;
+}
+.icon-picker-container .reset-button {
+  color: #d32f2f;
+}
+.icon-picker-container .active {
+  color: #1a8647;
+  background-color: #e9fff2;
+  pointer-events: none;
+  border: 1px solid #27ae60;
+}
+
+@media screen and (max-width: 768px) {
+  .icon-picker-container {
+    flex-direction: column;
+  }
+}
+.buttons-display-container {
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  min-height: 50vh;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+select {
+  min-width: 100px;
+  border: solid 1px #dbdbdb;
+  outline: none;
+  font-family: "Noto Sans JP", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  padding: 5px 0 5px 5px;
+  text-align: center;
+  margin: 0 1rem;
+}
+select:last-child {
+  margin: 0 0 0 1rem;
+}
+
+label {
+  padding: 0 1.5rem 0 0.3rem;
+}
+
+.footer {
+  background-color: #f3f3f3;
+  padding: 0 0 2rem 0;
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    padding-top: 2rem;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+p {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #3f3f3f;
+  padding-bottom: 1rem;
+}
+
+.checkbox-input-container {
+  padding: 1rem;
+  margin-left: 2rem;
+}
+
+.custom-button-container {
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .custom-button-container h1 {
+    margin-top: 2rem;
+  }
+}
+
+.button-container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.button-container .headline {
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .button-container {
+    padding: 2rem 1rem 0rem 1rem;
+  }
+}
+
+.select-input-container {
+  display: flex;
+  padding-top: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=App.css.map */
